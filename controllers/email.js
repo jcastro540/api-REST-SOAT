@@ -17,10 +17,13 @@ let transporter = nodemailer.createTransport({
 // send mail with defined transport object
 function sendmail(req, err, next){
 		let params = req.body;
+		console.log(params);
+
+
 		let email = new Email();
 		let mailOptions = {
-		    from: `${params.user[0].name} <${params.user[0].email}>`, // sender address
-		    to: 'josecastro540@gmail.com', // list of receivers
+		    from: 'josecastro540@gmail.com', // sender address
+		    to: `${params.emailUser}`, // list of receivers
 		    subject: 'Resumen de Compra ✔', // Subject line
 		    // text: 'Hello world ?', // plain text body
 		    html: `
