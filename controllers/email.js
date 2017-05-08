@@ -11,7 +11,7 @@ let transporter = nodemailer.createTransport({
     auth: {
         user: 'josecastro540@gmail.com',
         pass: '110-16542750-j'
-    }
+    } 
 });
 
 // send mail with defined transport object
