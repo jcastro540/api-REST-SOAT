@@ -6,8 +6,7 @@ let Schema = mongoose.Schema;
 let PolizaSchema = new Schema({
 	placa:{
 		type:String,
-		required: true,
-		unique: true
+		required: true
 	},
 	clase: {
 		type:String,
